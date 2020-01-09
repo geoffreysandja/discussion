@@ -5,6 +5,7 @@
               {description,"discuss"},
               {modules,['Elixir.Discuss','Elixir.Discuss.AuthController',
                         'Elixir.Discuss.ChannelCase','Elixir.Discuss.Comment',
+                        'Elixir.Discuss.CommentsChannel',
                         'Elixir.Discuss.ConnCase','Elixir.Discuss.Endpoint',
                         'Elixir.Discuss.ErrorHelpers',
                         'Elixir.Discuss.ErrorView','Elixir.Discuss.Gettext',
@@ -19,7 +20,9 @@
                         'Elixir.Discuss.Topic',
                         'Elixir.Discuss.TopicController',
                         'Elixir.Discuss.TopicView','Elixir.Discuss.User',
-                        'Elixir.Discuss.UserSocket','Elixir.Discuss.Web']},
+                        'Elixir.Discuss.UserSocket','Elixir.Discuss.Web',
+                        'Elixir.Poison.Encoder.Discuss.Comment',
+                        'Elixir.Poison.Encoder.Discuss.User']},
               {registered,[]},
               {vsn,"0.0.1"},
               {mod,{'Elixir.Discuss',[]}}]}.
