@@ -36,9 +36,9 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :discuss, Discuss.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "genius123",
-  database: "discuss_dev",
-  hostname: "localhost",
+  username: "",
+  password: "",
+  database: "",
+  hostname: "",
   port: 5432,
   pool_size: 10
