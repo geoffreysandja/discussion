@@ -15,6 +15,18 @@ config :discuss, Discuss.Repo,
   hostname: "",
   port: 5432,
   pool_size: 10
+
+  ```
+  * Make sure to create a Github Application (This app uses OAuth Login with Github) and modify config/config.exs
+
+  ```elixir
+  config :ueberauth, Ueberauth,
+  providers: [
+    github: { Ueberauth.Strategy.Github, [default_scope: "user,user:email,public_repo"] }
+  ]
+config :ueberauth, Ueberauth.Strategy.Github.OAuth,
+  client_id: "",
+  client_secret: ""
   
   ```
   

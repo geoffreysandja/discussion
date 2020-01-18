@@ -31,5 +31,5 @@ config :ueberauth, Ueberauth,
     github: { Ueberauth.Strategy.Github, [default_scope: "user,user:email,public_repo"] }
   ]
 config :ueberauth, Ueberauth.Strategy.Github.OAuth,
-  client_id: "97fd17a983434f23a47e",
-  client_secret: "5e848300c808c8c4cb4c38aaa5963a40917f6f0f"
+  client_id: "",
+  client_secret: ""
